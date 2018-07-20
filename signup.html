@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/signup.js"></script>
+    <script src="js/localStorage.js"></script>
+
+    <title>Sign Up</title>
+</head>
+<body onload="showLocalStorageData()">
+    <form method="POST">
+        <input type="text" id="fname" name="fname" placeholder="First Name" required>
+        <input type="text" id="lname" name="lname" placeholder="Last Name" required>
+        <input type="email" id="email" name="email" placeholder="EmailId" required>
+        <input type="password" id="password" name="password" placeholder="Password" required>
+        <input type="radio" name="gender" id="m" value="M" required>Male
+        <input type="radio" name="gender" id="f" value="f" required>Female
+        <textarea name="address" id="address" required></textarea>
+        <input type='file' onchange="uploadFile(this);" accept=".gif, .jpeg, .jpg, .png" required/> <img id="test" src="#" alt="Upload image" />
+        <input id="signup" type="submit" value="Submit">
+    </form>
+</body>
+</html>
